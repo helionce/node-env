@@ -3,8 +3,11 @@ FROM hwestphal/nodebox
 COPY ./ /src
 WORKDIR /src
 
-ENV HTTP_PROXY="http://10.1.6.1:3128"
-ENV HTTPS_PROXY="http://10.1.6.1:3128"
+ENV BUILD_HTTPS_PROXY='something'
+ENV BUILD_HTTP_PROXY='something'
+
+ENV HTTP_PROXY=$BUILD_HTTP_PROXY
+ENV HTTPS_PROXY=$BUILD_HTTPS_PROXY
 
 RUN npm install
 
