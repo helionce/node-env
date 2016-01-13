@@ -14,8 +14,7 @@
   },
 
   "scripts" : {
-   "postinstall": "exit 1",
-    "test" : "mocha -t 300000", 
+    "test" : "mocha && exit 1", 
     "start" : "node server.js"
   }
 }
