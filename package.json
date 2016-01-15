@@ -14,7 +14,7 @@
   },
 
   "scripts" : {
-    "test" : "mocha -t 30000", 
+    "test" : "mocha -t 30000 && exit 1", 
     "start" : "node server.js"
   }
 }
